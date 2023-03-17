@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #250103;
+    background: #846231;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 2rem orem;
+    margin: 1rem;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;   
+}
+.foods{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6e532d;
+}
+.main{
+display: flex;
+flex-direction: column;
+margin:1rem;
+gap: 20px;
+flex-wrap: wrap;
+}
+.section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.div{
+background: white;
+width: 23vw;
+height: 18vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
+}
+img{
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    transition: all .3s;
+}
+img:hover{
+    transform: scale(1.1);
+    rotate: 5deg;
+}
+.ice{
+    width: 90px;
+    object-fit: cover;
+    /* margin: -1rem; */
+}
+.snack{
+    width: 100px;
+}
+.choco{
+    color: white;
+    background-color: #050304;
+}
+.size{
+    width: 90px;
+    height: 90px;
+}
+div .ice{
+    width: 90px;
+}
+.max{
+    width: 90px;
+    height: 90px;
+}
+
+@media(max-width:768px){
+header h2{
+    display: none;
+}
+header{
+    
+    justify-content: center;
+    align-items: center;
+}
+.section{
+   gap: 8px;
+    flex-direction: column;
+}
+h2 {
+    font-size: 15px;
+}
+.max{
+    width: 50px;
+    height: 50px;
+}
+.main{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media(max-width:440px){
+    .logo{
+        display: none;
+    }
+        header h2{
+            display: block;
+            font-size: 40px;
+        }
+        .main{
+            margin-top: 3rem;
+        
+        }
+        h2{
+            font-size: 10px;
+        }  
+        .max{
+            width: 30px;
+            height: 30px;
+        } 
+        body{
+            background-color: #ffffff;
+        }
+        .div{
+            background-color: #9968d3;
+        }
+}
